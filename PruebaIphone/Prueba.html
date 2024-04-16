@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulación de Fondo de Pantalla de iPhone</title>
+  <!-- Agrega la referencia al archivo CSS de Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Agrega tu archivo CSS personalizado -->
+  <link rel="stylesheet" href="prueba.css">
+</head>
+
+<body>
+  <!-- Contenedor principal para alinear el contenido al centro -->
+  <div class="container">
+    <!-- Capa para el fondo difuminado -->
+    <div class="background"></div>
+    <!-- Contenedor del iPhone -->
+    <div class="iphone">
+      <div class="containercabecera">
+        <div class="row align-items-center p-2">
+          <div class="col-auto">
+            <span class="entel-text text-sm">Entel</span>
+          </div>
+
+          <div class="col"> <!-- Columna para los iconos -->
+            <div class="row justify-content-end"> <!-- Nueva fila para los iconos, alineada a la derecha -->
+              <div class="col-auto"> <!-- Columna auto para alinear los iconos a la derecha -->
+                <div class="icons d-flex">
+                  <div class="iconwifi mr-1">
+                    <img src="wifiblanco.png" alt="">
+                  </div>
+                  <div class="iconseñal mr-1">
+                    <img src="señalblanca.png" alt="">
+                  </div>
+                  <div class="iconBateriablanca mr-0">
+                    <img src="Bateriablanca.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantalla del iPhone -->
+      <div class="screen">
+
+        <!-- Aquí se mostrará la fecha -->
+        <div id="fecha" class="mt-3" style="margin-bottom: -20px;"></div>
+        <div id="hora" class="mt-0"></div>
+
+        <!-- Contenedor para mostrar la hora -->
+
+        <!-- Contenedor de la imagen -->
+<div class="container mt-0">
+  <div class="row justify-content-center">
+    <div class="col">
+      <!-- Primer div que ocupa todo el ancho -->
+      <div class="text-center">
+        <img src="198274378.jpg" alt="" class="img-fluid" id="imagen">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Contenedor del reproductor de música -->
+        <div class="audio-container mt-4"> <!-- Aplicamos una clase de margen superior personalizada -->
+          <div class="audio-player" style="background-color: #ffffff7c; padding: 0px; border-radius: 10px;">
+            <!-- Detalles de la música -->
+            <div class="music-details d-flex justify-content-between align-items-center">
+              <div class="controlsmusica">
+                <button class="control-button"></button>
+              </div>
+              <div class="song-info d-flex flex-column align-items-center">
+                <h3 class="song-title mb-0" style="color: #00050b; font-size: 15px;">Allemande - Fierce Panda Single
+                </h3>
+                <h4 class="artist mb-0" style="color: #505c68; font-size: 14px;">Keane</h4>
+              </div>
+
+
+
+              <div class="controlsmusica">
+                <button class="control-button Minibarra" style="position: relative;">
+                  <img src="MiniBarra.png" alt="Descripción de la imagen"
+                    style="max-width: 50%; max-height: 28%; position: absolute; top: 0; left: 0; bottom: 4px; right: 10px; margin: auto;">
+                </button>
+              </div>
+            </div>
+
+            <!-- Espacio superior e inferior -->
+            <div class="my-0">
+              <div class="time-display p-3 d-flex align-items-center justify-content-center" style="height: 0px;">
+                <h4 class="current-time mr-auto mb-0" style="color: #4c5866; font-size: 12px;">2:11</h4>
+                <div class="progress-bar flex-grow-1 mx-3"
+                  style="background-color: #75818f; border-radius: 30px; height: 10px;">
+                  <div class="progress" style="width: 60%; background-color: #00050b; height: 100%;"></div>
+                </div>
+                <h4 class="remaining-time ml-auto mb-0" style="color: #4c5866; font-size: 12px;">-1:48</h4>
+              </div>
+
+            </div>
+
+
+
+            <!-- Controles de reproducción -->
+            <div class="controls d-flex justify-content-center">
+              <div class="control-button-container flex-grow-1 d-flex justify-content-center align-items-center">
+                <button class="control-button">
+
+                </button>
+              </div>
+              <div class="control-button-container flex-grow-1 d-flex justify-content-center align-items-center">
+                <button class="control-button prev-button">
+                  <img src="Anterior.png" alt="Botón 2" class="img-fluid">
+                </button>
+              </div>
+
+              <div class="control-button-container flex-grow-1 d-flex justify-content-center align-items-center">
+                <button class="control-button pause-button">
+                  <img src="Pausa.png" alt="Botón 2" class="img-fluid" style="max-width: 30px; max-height: 30px;">
+                </button>
+              </div>
+
+              <div class="control-button-container flex-grow-1 d-flex justify-content-center align-items-center">
+                <button class="control-button next-button">
+                  <img src="Siguiente.png" alt="Botón 2" class="img-fluid">
+                </button>
+              </div>
+              <div class="control-button-container flex-grow-1 d-flex justify-content-center align-items-center">
+                <button class="control-button radio-button">
+                  <img src="Radio.png" alt="Botón 2" class="img-fluid">
+                </button>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <!-- Otros controles -->
+        <div class="Otros mb-5">
+          <div class="control-container linterna">
+            <button class="control-button linterna" style="position: relative;">
+              <img src="Linterna.png" alt=""
+                style="max-width: 100%; max-height: 100%; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto;">
+            </button>
+          </div>
+
+          <div class="control-container Camara">
+            <button class="control-button Camara" style="position: relative;">
+              <img src="Camara21.png" alt="Descripción de la imagen"
+                style="max-width: 100%; max-height: 100%; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto;">
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Barra de notch -->
+        <div class="containerbarranotch" style="position: fixed; bottom: 0px; left: 0; right: 0; text-align: center;">
+          <div class="row justify-content-center">
+            <div class="col-md-4 mx-auto">
+              <div class="BarraNotch mt-3" style="max-width: 50%; margin: 0 auto;">
+                <img src="BarraNotch.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="Fecha.js"></script>
+  <script src="Hora.js"></script>
+</body>
+
+</html>

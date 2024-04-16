@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "MiFuente";
+  src: url("./SF-Pro-Display-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MiFuente2";
+  src: url("./SF-Pro-Rounded-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Horaactual";
+  src: url("./SF-Pro-Semibold-Rails.otf") format("opentype");
+}
+
+body {
+  color: #ffffffe0;
+  margin: 0;
+  padding: 0;
+  font-family: "MiFuente2", sans-serif;
+}
+.entel-text {
+  font-family: "MiFuente3", sans-serif; /* 'sans-serif' es una fuente de respaldo */
+  font-size: small;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("198274378.jpg");
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+#fecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-size: 1.2em;
+  font-family: "MiFuente2", Arial, sans-serif;
+}
+
+#hora {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 50%;
+  font-size: 90px;
+  font-family: "Horaactual", Arial, sans-serif;
+  margin: 0; /* Eliminar los márgenes */
+  padding: 0; /* Eliminar el relleno */
+  overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+.icons img {
+  width: 15px;
+  height: auto;
+  margin-right: 2px;
+}
+
+.iconwifi img {
+  width: 15px;
+  margin-right: 2px;
+}
+
+.iconBateriablanca img {
+  width: 20px;
+}
+
+.song-title {
+  font-family: 'MiFuente', sans-serif;
+}
+
+.artist {
+  font-family: 'MiFuente2', sans-serif;
+}
+
+.Otros {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 15px;
+}
+
+.control-button {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff00;
+  border: none;
+}
+
